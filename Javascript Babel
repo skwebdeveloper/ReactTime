@@ -1,0 +1,12 @@
+function tick() {
+  const element = (
+    <div>
+      <h1>It's show you the real world time!</h1>
+      <h1>It is {new Date().toLocaleTimeString()}.</h1>
+    </div>
+  );
+  // highlight-next-line
+  ReactDOM.render(element, document.getElementById('root'));
+}
+
+setInterval(tick, 1000);
